@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>MainImage.png</file>
+        <file>Splashscreen.png</file>
+        <file>MainScreenApp.jpg</file>
+        <file>PaymentSystem.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>1000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainWindow {
+    background-image: url(:/new/prefix1/MainScreenApp.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="Balance">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>20</y>
+      <width>224</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    font-size: 20px;                  /* Font size for better readability */
+    color: #333333;                   /* Dark gray text color for contrast */
+    background-color: #F0F0F0;        /* Light gray background for a clean look */
+    border: 2px solid #A9A9A9;        /* Soft border to define the box */
+    border-radius: 10px;              /* Rounded corners for a modern appearance */
+    padding: 10px;                    /* Padding for spacing inside the text box */
+    min-height: 40px;                 /* Minimum height to make it comfortable for viewing */
+    min-width: 200px;                 /* Minimum width for balance display */
+}
+
+QLineEdit:focus {
+    border-color: #0078D7;            /* Change the border color when focused */
+    background-color: #FFFFFF;        /* Lighten the background when focused */
+    color: #000000;                   /* Change text color when focused */
+}
+
+QLabel {
+    font-size: 20px;                  /* Same font size for QLabel */
+    color: #333333;                   /* Text color */
+    background-color: #F0F0F0;        /* Background similar to QLineEdit */
+    border: 2px solid #A9A9A9;        /* Border for QLabel */
+    border-radius: 10px;              /* Same rounded corners for QLabel */
+    padding: 10px;                    /* Padding for consistency */
+    min-height: 40px;                 /* Minimum height */
+    min-width: 200px;                 /* Minimum width */
+    text-align: center;               /* Center-align text for QLabel */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Balance : </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ChargeBalance">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>100</y>
+      <width>194</width>
+      <height>74</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-size: 18px;                 /* Font size for the button text */
+    font-weight: bold;               /* Bold text for emphasis */
+    color: white;                    /* White text color */
+    background-color: #4CAF50;       /* Green background to indicate action */
+    border: 2px solid #388E3C;       /* Slightly darker green border */
+    border-radius: 10px;             /* Rounded corners for a modern look */
+    padding: 10px 20px;              /* Padding for a larger, clickable area */
+    min-width: 150px;                /* Minimum width to ensure proper size */
+    min-height: 50px;                /* Minimum height for a button with a good visual size */
+}
+
+QPushButton:hover {
+    background-color: #45A049;       /* Slightly lighter green when hovered */
+    border: 2px solid #2E7D32;       /* Change the border color on hover */
+}
+
+QPushButton:pressed {
+    background-color: #388E3C;       /* Darken the button when pressed */
+    border: 2px solid #1B5E20;       /* Darker border when pressed */
+    color: #E0E0E0;                  /* Slightly lighter text when pressed */
+}
+
+QPushButton:disabled {
+    background-color: #D3D3D3;       /* Gray background for disabled state */
+    border: 2px solid #A9A9A9;       /* Gray border for disabled state */
+    color: #808080;                  /* Gray text for disabled state */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Charge Balance</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
