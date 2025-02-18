@@ -1,0 +1,43 @@
+@startuml
+skinparam state {
+    BackgroundColor LightBlue
+    BorderColor Black
+    FontSize 12
+}
+
+[*] --> Grinding
+
+state Grinding : Grinding coffee beans
+Grinding --> WaterHeating : Beans ground
+
+state WaterHeating : Heating water to optimal temperature
+WaterHeating --> PreInfusing : Water heated
+
+state PreInfusing : Pre-infusing (blooming) coffee grounds
+PreInfusing --> Extraction : Bloom complete
+
+state Extraction : Extracting coffee under pressure
+Extraction --> Dispensing : Extraction complete
+
+state Dispensing : Dispensing brewed coffee into cup
+Dispensing --> Cleaning : Dispensed successfully
+
+state Cleaning : Flushing and cleaning brewing components
+Cleaning --> Completed : Cleaning complete
+
+state Completed : Brewing finished successfully
+Completed --> [*]
+
+' Define an error state without curly braces or quotes
+state ErrorState : Display error message and halt process
+
+' Error transitions
+Grinding --> ErrorState : Grinding error
+WaterHeating --> ErrorState : Heating error
+PreInfusing --> ErrorState : Pre-infusing error
+Extraction --> ErrorState : Extraction error
+Dispensing --> ErrorState : Dispensing error
+Cleaning --> ErrorState : Cleaning error
+
+ErrorState --> [*]
+@enduml

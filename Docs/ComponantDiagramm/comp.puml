@@ -1,0 +1,54 @@
+@startuml
+skinparam componentStyle uml2
+
+package "View (Qt Widgets)" {
+    component "MainWindow" as MW <<QMainWindow>>
+    note bottom of MW
+      - Inherits QMainWindow
+      - Contains UI widgets
+      - Binds to the ViewModel via signals/slots
+    end note
+}
+
+package "ViewModel" {
+    component "CoffeeMachineViewModel" as VM
+    note bottom of VM
+      - Exposes properties & commands to the View
+      - Translates user interactions into Model updates
+      - Observes Model changes & notifies the View
+    end note
+}
+
+package "Model (Business Logic)" {
+    component "PaymentModel" as PM
+    component "InventoryModel" as IM
+    component "BrewingModel" as BM
+    component "MaintenanceModel" as MM
+    component "LoggerModel" as LOG
+    
+    ' BrewingEngine encapsulates the brewing process using a state machine pattern.
+    component "BrewingEngine" as BE
+    note bottom of BE
+      - Implements the detailed brewing process:
+          • Grinding coffee beans
+          • Heating water
+          • Pre-infusing (blooming) the grounds
+          • Extracting coffee under pressure
+          • Dispensing brewed coffee
+          • Cleaning brewing components
+      - Internally uses a state machine to manage transitions.
+    end note
+    
+    ' BrewingModel delegates brewing operations to the BrewingEngine.
+    BM ..> BE : delegates brewing process
+}
+
+' MVVM Dependencies
+MW --> VM : "User interactions"
+VM --> PM : "Process payment"
+VM --> IM : "Check & update inventory"
+VM --> BM : "Brew coffee"
+VM --> MM : "Perform maintenance tasks"
+VM --> LOG : "Record logs"
+
+@enduml

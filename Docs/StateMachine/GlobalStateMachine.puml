@@ -1,0 +1,39 @@
+@startuml
+skinparam state {
+  BackgroundColor<<Composite>> LightYellow
+  BackgroundColor LightBlue
+  BorderColor Black
+}
+
+[*] --> Idle
+
+Idle --> Payment : Order Received
+
+state Payment <<Composite>> {
+  [*] --> AwaitingPayment
+  AwaitingPayment --> PaymentAccepted : Payment Accepted
+  AwaitingPayment --> PaymentRejected : Payment Rejected
+  PaymentRejected --> [*] : Cancel Order
+  PaymentAccepted --> [*]
+}
+
+Payment --> Brewing : Payment Confirmed
+
+state Brewing <<Composite>> {
+  [*] --> InitiateBrewing
+  InitiateBrewing --> BrewingInProgress : Start Brewing
+  BrewingInProgress --> BrewingComplete : Brewing Finished
+  BrewingInProgress --> BrewingError : Error Occurred
+  BrewingComplete --> [*]
+  BrewingError --> [*]
+}
+
+Brewing --> Completed : Brew Successful
+Brewing --> Error : Brew Failed
+
+Completed --> Idle : Order Completed
+
+Error --> Maintenance : Service Required
+Maintenance --> Idle : Maintenance Complete
+
+@enduml

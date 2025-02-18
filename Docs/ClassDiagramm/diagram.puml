@@ -1,0 +1,105 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+' --------------------------------------------
+' Classes
+' --------------------------------------------
+class MainWindow {
+  - CoffeeMachineViewModel* m_viewModel
+  --
+  + MainWindow()
+  + ~MainWindow()  ' destructor
+  + void setupUI()
+  + void connectSignalsSlots()
+}
+
+class CoffeeMachineViewModel {
+  - PaymentModel* m_payment
+  - InventoryModel* m_inventory
+  - BrewingModel* m_brewing
+  - MaintenanceModel* m_maintenance
+  - LoggerModel* m_logger
+  --
+  + CoffeeMachineViewModel()
+  + ~CoffeeMachineViewModel()
+  + void onBrewCoffee()
+  + void onMaintenanceCheck()
+  + void onPaymentRequest()
+}
+
+class PaymentModel {
+  - double m_balance
+  --
+  + PaymentModel()
+  + ~PaymentModel()
+  + bool processPayment(double amount)
+  + double getBalance()
+  + void addBalance(double amount)
+}
+
+class InventoryModel {
+  - int m_coffeeBeans
+  - int m_waterLevel
+  - int m_cups
+  --
+  + InventoryModel()
+  + ~InventoryModel()
+  + bool hasSufficientResources()
+  + void updateResources()
+  + int getCoffeeBeans()
+  + int getWaterLevel()
+  + int getCups()
+}
+
+class BrewingModel {
+  - BrewingEngine* m_engine
+  --
+  + BrewingModel()
+  + ~BrewingModel()
+  + void startBrewing()
+  + void stopBrewing()
+  + void handleBrewStateChange()
+}
+
+class BrewingEngine {
+  --
+  + BrewingEngine()
+  + ~BrewingEngine()
+  + void grindBeans()
+  + void heatWater()
+  + void preInfuse()
+  + void extract()
+  + void dispense()
+  + void cleanUp()
+}
+
+class MaintenanceModel {
+  --
+  + MaintenanceModel()
+  + ~MaintenanceModel()
+  + void performMaintenance()
+  + bool needsMaintenance()
+}
+
+class LoggerModel {
+  --
+  + LoggerModel()
+  + ~LoggerModel()
+  + void logEvent(const std::string &msg)
+  + void logError(const std::string &err)
+  + void showLogs()
+}
+
+' --------------------------------------------
+' Relationships
+' --------------------------------------------
+MainWindow --> CoffeeMachineViewModel : owns/uses
+CoffeeMachineViewModel --> PaymentModel : manages
+CoffeeMachineViewModel --> InventoryModel : manages
+CoffeeMachineViewModel --> BrewingModel : manages
+CoffeeMachineViewModel --> MaintenanceModel : manages
+CoffeeMachineViewModel --> LoggerModel : manages
+
+BrewingModel --> BrewingEngine : delegates
+
+@enduml
