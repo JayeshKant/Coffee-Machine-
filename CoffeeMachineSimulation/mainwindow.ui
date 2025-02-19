@@ -254,55 +254,6 @@ QPushButton#btnRefill:pressed {
      <string>Refill</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnCheckMaintenance">
-    <property name="geometry">
-     <rect>
-      <x>800</x>
-      <y>110</y>
-      <width>83</width>
-      <height>83</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton#btnCheckMaintenance {
-    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
-                stop:0 #5A5A5A, stop:0.5 #777777, stop:1 #B5B5B5); /* Metallic gradient */
-    color: white;
-    font-size: 10px;  /* Adjusted for better fit */
-    font-weight: bold;
-    font-family: &quot;Segoe UI&quot;, sans-serif;
-    border-radius: 30px;  /* More rounded */
-    padding: 6px;
-    border: 3px solid #444444; /* Darker metallic border */
-    min-width: 65px;
-    min-height: 65px;
-    max-width: 65px;
-    max-height: 65px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.2s ease-in-out;
-    border-image: url(:/new/prefix1/OIP.jpeg); /* Correct way */
-}
-
-QPushButton#btnCheckMaintenance:hover {
-    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
-                stop:0 #777777, stop:0.5 #B5B5B5, stop:1 #D9D9D9); /* Brighter metallic */
-    border: 3px solid #777777;
-}
-
-QPushButton#btnCheckMaintenance:pressed {
-    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
-                stop:0 #3E3E3E, stop:0.5 #5A5A5A, stop:1 #777777); /* Darker when pressed */
-    border: 3px solid #5A5A5A;
-    transform: scale(0.92);  /* Press animation */
-}
-</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btnPerformMaintenance">
     <property name="geometry">
      <rect>
@@ -355,7 +306,7 @@ QPushButton#btnPerformMaintenance:pressed {
    <widget class="QPushButton" name="btnShowLogs">
     <property name="geometry">
      <rect>
-      <x>760</x>
+      <x>860</x>
       <y>210</y>
       <width>126</width>
       <height>71</height>
@@ -481,7 +432,6 @@ QPushButton#btnShowLogs:pressed {
    <zorder>btnLatte</zorder>
    <zorder>btnAddFunds</zorder>
    <zorder>btnRefill</zorder>
-   <zorder>btnCheckMaintenance</zorder>
    <zorder>btnPerformMaintenance</zorder>
    <zorder>btnShowLogs</zorder>
    <zorder>textBrewingSteps</zorder>
