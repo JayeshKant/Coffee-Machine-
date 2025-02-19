@@ -182,6 +182,7 @@ void MainWindow::updateMenuResources()
     menuText += QString("💵 Revenue: $%1\n").arg(payment->getRevenue());
     menuText += QString("☕ Coffee Beans: %1\n").arg(inventory->getCoffeeBeans());
     menuText += QString("💧 Water Level: %1 ml\n").arg(inventory->getWaterLevel());
+    menuText += QString("🥛 Milk Level: %1 ml\n").arg(inventory->getMilk());
     menuText += QString("🥤 Cups: %1\n").arg(inventory->getCups());
 
     // Maintenance Status

@@ -30,4 +30,6 @@ public:
 
     //! Cleans up the brewing system after use.
     void cleanUp();
+
+    void heatMilk();
 };

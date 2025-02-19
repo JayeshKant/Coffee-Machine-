@@ -12,9 +12,12 @@ BrewingModel::BrewingModel(QObject *parent)
     m_steps = {
         { &BrewingEngine::grindBeans,  "🔄 Grinding Coffee Beans..." },
         { &BrewingEngine::heatWater,   "🔥 Heating Water..." },
+        { &BrewingEngine::heatMilk,   "🔥 Heating Milk..." },
         { &BrewingEngine::preInfuse,   "💦 Pre-infusing Coffee Grounds..." },
         { &BrewingEngine::extract,     "☕ Extracting Coffee..." },
         { &BrewingEngine::dispense,    "🍶 Dispensing Coffee..." }
+
+
     };
 }
 

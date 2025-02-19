@@ -5,3 +5,4 @@
 #define INITIAL_WATER_LEVEL 1000  //!< Initial water level in milliliters.
 #define INITIAL_CUPS 10           //!< Initial number of available cups.
 #define INITIAL_REVENUE 0.0       //!< Initial revenue of the coffee machine.
+#define INITIAL_MILK_LVL 1000  // Initial Milk lvl

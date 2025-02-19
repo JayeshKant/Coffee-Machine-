@@ -17,10 +17,13 @@ public:
     void refillCoffeeBeans(int amount);
     void refillWater(int amount);
     void refillCups(int amount);
+    void refillMilk (int amount);
 
     int getCoffeeBeans() const;
     int getWaterLevel() const;
     int getCups() const;
+    int getMilk () const;
+
 
 signals:
     void inventoryUpdated();
@@ -29,4 +32,5 @@ private:
     int m_coffeeBeans = INITIAL_COFFEE_BEANS;
     int m_waterLevel = INITIAL_WATER_LEVEL;
     int m_cups = INITIAL_CUPS;
+    int m_milklevel = INITIAL_MILK_LVL;
 };

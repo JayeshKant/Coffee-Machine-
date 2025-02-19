@@ -17,11 +17,11 @@ enum class CoffeeType {
 inline CoffeeRecipe getCoffeeRecipe(CoffeeType type) {
     switch (type) {
     case CoffeeType::Espresso:
-        return CoffeeRecipe{10, 30, 1};    //!< 10 beans, 30 ml water, 1 cup.
+        return CoffeeRecipe{10, 30, 1 , 0};    //!< 10 beans, 30 ml water, 1 cup.
     case CoffeeType::Cappuccino:
-        return CoffeeRecipe{12, 60, 1};    //!< 12 beans, 60 ml water, 1 cup.
+        return CoffeeRecipe{12, 60, 1 , 10};    //!< 12 beans, 60 ml water, 1 cup.
     case CoffeeType::Latte:
-        return CoffeeRecipe{10, 200, 1};   //!< 10 beans, 200 ml water, 1 cup.
+        return CoffeeRecipe{10, 200, 1 , 15};   //!< 10 beans, 200 ml water, 1 cup.
     default:
         return CoffeeRecipe{10, 30, 1};    //!< Default to Espresso.
     }

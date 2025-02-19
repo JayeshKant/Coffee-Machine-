@@ -51,3 +51,7 @@ void BrewingEngine::dispense() {
 void BrewingEngine::cleanUp() {
     simulateLoading(" Cleaning up brewing equipment");
 }
+
+void BrewingEngine::heatMilk(){
+    simulateLoading("Heating Milk");
+}
