@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>recources.qrc</file>
+        <file>MainScreenApp (1).jpg</file>
+        <file>R.png</file>
+        <file>OIP.jpeg</file>
+        <file>OIP (1).jpeg</file>
+        <file>Splashscreen.png</file>
+    </qresource>
+</RCC>

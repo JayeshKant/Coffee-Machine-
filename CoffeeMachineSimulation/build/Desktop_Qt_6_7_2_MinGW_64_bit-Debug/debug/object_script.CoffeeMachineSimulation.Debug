@@ -1,0 +1,16 @@
+debug/brewingengine.o
+debug/brewingmodel.o
+debug/inventorymodel.o
+debug/loggermodel.o
+debug/main.o
+debug/maintenancemodel.o
+debug/mainwindow.o
+debug/paymentmodel.o
+debug/qrc_recources.o
+debug/moc_brewingengine.o
+debug/moc_brewingmodel.o
+debug/moc_inventorymodel.o
+debug/moc_loggermodel.o
+debug/moc_maintenancemodel.o
+debug/moc_mainwindow.o
+debug/moc_paymentmodel.o

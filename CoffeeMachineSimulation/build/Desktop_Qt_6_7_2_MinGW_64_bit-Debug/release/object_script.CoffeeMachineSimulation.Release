@@ -1,0 +1,16 @@
+release/brewingengine.o
+release/brewingmodel.o
+release/inventorymodel.o
+release/loggermodel.o
+release/main.o
+release/maintenancemodel.o
+release/mainwindow.o
+release/paymentmodel.o
+release/qrc_recources.o
+release/moc_brewingengine.o
+release/moc_brewingmodel.o
+release/moc_inventorymodel.o
+release/moc_loggermodel.o
+release/moc_maintenancemodel.o
+release/moc_mainwindow.o
+release/moc_paymentmodel.o

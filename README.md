@@ -153,7 +153,7 @@ Pull requests are welcome! If you’d like to improve the project, feel free to 
 
 ## 🌟 Credits  
 - **Inspiration:** Real-world coffee machines  
-- **Technologies Used:** C++17  
+- **Technologies Used:** C++17  Doxygen
 
 ---
 
