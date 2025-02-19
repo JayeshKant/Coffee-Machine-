@@ -47,8 +47,6 @@ MainWindow::MainWindow(QWidget *parent)
             this, &MainWindow::addFunds);
     connect(ui->btnRefill, &QPushButton::clicked,
             this, &MainWindow::refillInventory);
-    connect(ui->btnCheckMaintenance, &QPushButton::clicked,
-            this, &MainWindow::checkMaintenance);
     connect(ui->btnPerformMaintenance, &QPushButton::clicked,
             this, &MainWindow::performMaintenance);
     connect(ui->btnShowLogs, &QPushButton::clicked,
