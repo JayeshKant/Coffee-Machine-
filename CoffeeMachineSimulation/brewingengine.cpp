@@ -1,4 +1,4 @@
-#include "BrewingEngine.h"
+#include "brewingengine.h"
 #include <QDebug>
 #include <QThread>
 
