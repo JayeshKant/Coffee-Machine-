@@ -7,4 +7,7 @@ SUBDIRS += \
     ../unitest_brewingengine \
     ../unittests_paymentsystem \
     ../unittest_maintenancemodel \
+    ../unittest_inventorymodel \
+    ../unittest_loggermodel \
+
 
