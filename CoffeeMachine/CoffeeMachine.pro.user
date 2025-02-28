@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 15.0.1, 2025-02-26T16:42:23. -->
+<!-- Written by QtCreator 15.0.1, 2025-02-28T17:50:52. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -72,10 +72,14 @@
    </valuemap>
    <value type="bool" key="AutoTest.ApplyFilter">false</value>
    <valuemap type="QVariantMap" key="AutoTest.CheckStates">
-    <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/unittests_paymentsystem/tst_paymentsystem.cpp:cleanupTestCase">Unchecked</value>
-    <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/unittests_paymentsystem/tst_paymentsystem.cpp:initTestCase">Unchecked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/unittest_maintenancemodel/tst_maintenance_model.cpp:cleanupTestCase">Unchecked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/unittest_maintenancemodel/tst_maintenance_model.cpp:initTestCase">Unchecked</value>
     <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/unitest_brewingengine/tst_unitests_brewingengine.cpp:cleanupTestCase">Unchecked</value>
     <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/unitest_brewingengine/tst_unitests_brewingengine.cpp:initTestCase">Unchecked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/unittests_paymentsystem/tst_paymentsystem.cpp:addBalance_data">Unchecked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/unittests_paymentsystem/tst_paymentsystem.cpp:cleanupTestCase">Unchecked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/unittests_paymentsystem/tst_paymentsystem.cpp:initTestCase">Unchecked</value>
+    <value type="Qt::CheckState" key="1@C:/Users/Jayes/Desktop/Coffee-Machine-/unittests_paymentsystem/tst_paymentsystem.cpp:processPayment_data">Unchecked</value>
    </valuemap>
    <valuelist type="QVariantList" key="AutoTest.PathFilters"/>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
@@ -289,14 +293,33 @@
     <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/unittests_paymentsystem/unittests_paymentsystem.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Jayes/Desktop/Coffee-Machine-/unittests_paymentsystem/unittests_paymentsystem.pro</value>
     <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/unittests_paymentsystem</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/build/unittests_paymentsystem</value>
    </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">3</value>
+   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
+    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
+    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
+    <value type="int" key="Analyzer.Valgrind.Callgrind.CostFormat">0</value>
+    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
+    <valuelist type="QVariantList" key="CustomOutputParsers"/>
+    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
+    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+    <value type="bool" key="PE.EnvironmentAspect.PrintOnRun">false</value>
+    <value type="QString" key="PerfRecordArgsId">-e cpu-cycles --call-graph &quot;dwarf,4096&quot; -F 250</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/unittest_maintenancemodel/unittest_maintenancemodel.pro</value>
+    <value type="bool" key="ProjectExplorer.RunConfiguration.Customized">false</value>
+    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
+    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Jayes/Desktop/Coffee-Machine-/CoffeeMachine/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/unittest_maintenancemodel</value>
+   </valuemap>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">4</value>
   </valuemap>
  </data>
  <data>

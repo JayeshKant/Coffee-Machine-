@@ -5,5 +5,6 @@ TEMPLATE = subdirs
 SUBDIRS += \
     ../CoffeeMachineSimulation \
     ../unitest_brewingengine \
-    ../unittests_paymentsystem
+    ../unittests_paymentsystem \
+    ../unittest_maintenancemodel \
 
