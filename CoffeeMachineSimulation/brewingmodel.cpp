@@ -26,6 +26,7 @@ BrewingModel::~BrewingModel()
     delete m_engine;
 }
 
+
 //! Starts the brewing process with delays between each step.
 void BrewingModel::startBrewing()
 {

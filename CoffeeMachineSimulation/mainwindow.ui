@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>992</width>
-    <height>631</height>
+    <width>995</width>
+    <height>643</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -31,6 +37,12 @@
       <width>141</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -209,7 +221,7 @@ QPushButton#btnAddFunds:pressed {
    <widget class="QPushButton" name="btnRefill">
     <property name="geometry">
      <rect>
-      <x>830</x>
+      <x>820</x>
       <y>520</y>
       <width>161</width>
       <height>86</height>
@@ -312,6 +324,12 @@ QPushButton#btnPerformMaintenance:pressed {
       <height>71</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton#btnShowLogs {
     background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
@@ -352,8 +370,8 @@ QPushButton#btnShowLogs:pressed {
    <widget class="QTextEdit" name="textLogViewer">
     <property name="geometry">
      <rect>
-      <x>710</x>
-      <y>300</y>
+      <x>380</x>
+      <y>370</y>
       <width>274</width>
       <height>201</height>
      </rect>
@@ -413,8 +431,8 @@ QPushButton#btnShowLogs:pressed {
    <widget class="QLabel" name="lblCoffeeCup">
     <property name="geometry">
      <rect>
-      <x>450</x>
-      <y>390</y>
+      <x>850</x>
+      <y>330</y>
       <width>141</width>
       <height>172</height>
      </rect>
